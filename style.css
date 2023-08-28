@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(90deg,
+            rgba(241, 231, 201, 2) 0%,
+            rgba(255, 255, 255, 2) 50%,
+            rgba(241, 231, 201, 2) 100%);
+    padding: 70px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    font-size: 25px;
+    color: darkorange;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .nabvar ul li {
+    position: relative;
+    float: left;
+
+}
+
+.menu .nabvar ul li a {
+    padding: 20px;
+    color: black;
+    display: block;
+    font-size: 18px;
+}
+
+.menu .nabvar ul li a:hover {
+    color: darkorange;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #a6a5a776;
+    min-width: 400px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+.logo-2 {
+    width: 150px;
+}
+
+th,
+td {
+    color: white;
+}
+
+.borrar {
+    background-color: darkorange;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.header-txt {
+    flex-basis: 40%;
+}
+
+.header-txt h1 {
+    font-size: 70px;
+    line-height: 1;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+p {
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-1,
+.btn-3 {
+    display: inline-block;
+    padding: 10px 30px;
+    color: black;
+    border: 2px solid darkorange;
+    text-transform: capitalize;
+    border-radius: 15px;
+}
+
+.btn-1:hover,
+.btn-3:hover {
+    color: white;
+    background-color: darkorange;
+}
+
+.header-img {
+    flex-basis: 60%;
+}
+
+.oferts {
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.oferts-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.ofert-1 {
+    flex-basis: calc(30%-30px);
+    box-shadow: 0 0 20px rgba(134, 134, 134, 0.8);
+    padding: 25px;
+    background-color: rgb(245, 244, 244);
+    border-radius: 10px;
+}
+
+.ofert-1 img {
+    width: 130px;
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1;
+    color: rgb(34, 34, 34);
+    margin-bottom: 10px;
+}
+
+.product-txt p {
+    margin-bottom: 10px;
+}
+
+.precio {
+    color: orange;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.btn-3 {
+    padding: 4px 20px;
+}
+
+.logan-1 {
+    flex-basis: 40%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)),
+        url(img/ch1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.logan-1 h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.logan-1 p {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 8px 30px;
+    border: 1px solid white;
+    color: white;
+}
+
+.socials {
+    display: flex;
+}
+
+.social {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(255, 115, 0);
+    border-radius: 50%;
+}
+
+.social img {
+    margin: 7px;
+}
+
+.promotion {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.promotion-content {
+    display: flex;
+}
+
+.promotion-txt {
+    flex-basis: 50%;
+}
+
+.promotion-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.promotion-img img {
+    width: 250px;
+}
+
+.product {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.blog {
+    padding: 50px 0 100px 0;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1 {
+    flex-basis: calc(33.3% - 30px);
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-txt {
+    padding: 40px;
+}
+
+.btn-4 {
+    display: inline-block;
+    border: 1px solid darkorange;
+    padding: 8px 25px;
+    text-transform: capitalize;
+    color: black;
+    font-size: 17px;
+}
+
+.footer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links h3 {
+    font-size: 17px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.links a {
+    display: block;
+}
+
+.links a:hover {
+    color: black;
+}
+
+.links ul li a {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .nabvar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: orange;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.nabvar {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu .nabvar ul li a:hover {
+        color: white;
+    }
+
+    .header {
+        min-width: 0vh;
+        padding: 100px 30px 50px 30px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt {
+        margin-bottom: 25px;
+    }
+
+    .oferts {
+        padding: 30px;
+    }
+
+    .ofert-1 {
+        margin-bottom: 30px;
+    }
+
+    .logan-1 {
+        order: -2;
+        margin-bottom: 30px;
+    }
+
+    .promotion {
+        padding: 30px;
+    }
+
+    .promotion-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .promotion-txt {
+        margin-bottom: 25px;
+    }
+
+    .promotion-img {
+        width: 200px;
+    }
+
+    .product {
+        padding: 30px;
+    }
+
+    .product-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .blog {
+        padding: 30px;
+    }
+
+}
